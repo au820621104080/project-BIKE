@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.CSS">
+    <title>BIKE</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="path">
+
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <div class="thumbnail">
+            <li><img src="./image/images__5_-removebg-preview.png"
+                    onclick="big('./image/images__5_-removebg-preview.png');path('#e5e5e5');bg('aqua')"></li>
+            <li><img src="./image/images__6_-removebg-preview.png"
+                    onclick="big('./image/images__6_-removebg-preview.png');path('black');bg('orange')"></li>
+            <li><img src="./image/images__8_-removebg-preview.png"
+                    onclick="big('./image/images__8_-removebg-preview.png');path('white');bg('green')"></li>
+        </div>
+        <div class="big-img">
+            <img src="./image/images__5_-removebg-preview.png" class="big">
+        </div>
+        <div class="content">
+            <p class="p-tag">&#x1F525;Let's Blast the street&#x1F525;</p>
+            <h1 class="h1-tag">No fear when <br>enfield is here!!</h1>
+            <h5 class="h1-tag">⚜️*For the royal entry*⚜️</h5>
+        </div>
+    </div>
+</body>
+<script>
+    function big(img) {
+        document.querySelector('.big').src = img;
+    }
+    function path(color) {
+        const path = document.querySelector('.path');
+        path.style.background = color;
+    }
+    function bg(background){
+        const bg=document.querySelector('.container');
+        bg.style.background = background;
+    }
+</script>
+
+</html>
